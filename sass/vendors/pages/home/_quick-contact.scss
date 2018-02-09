@@ -1,0 +1,48 @@
+.quick-contact-bg {
+    background-image: url(../../assets/img/quick-contact-bg.jpg);
+    min-height: 600px;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.quick-contact-form {
+    margin-top: 3rem;
+    input,
+    textarea {
+        background-color: transparent;
+        border: 1px solid $formgrey;
+        @include border-radius(0);
+        @include transition(all .3s ease-in-out);
+        &::-webkit-input-placeholder {
+            color: $placeholder_1;
+            font-family: $font_family_1;
+            font-style: italic;
+            font-size: 14px;
+        }
+        &:-ms-input-placeholder {
+            color: $placeholder_1;
+            font-family: $font_family_1;
+            font-style: italic;
+            font-size: 14px;
+        }
+        &::-moz-placeholder {
+            color: $placeholder_1;
+            opacity: 1;
+            font-family: $font_family_1;
+            font-style: italic;
+            font-size: 14px;
+        }
+        &:-moz-placeholder {
+            color: $placeholder_1;
+            opacity: 1;
+            font-family: $font_family_1;
+            font-style: italic;
+            font-size: 14px;
+        }
+        &:focus {
+            border-color: $red;
+        }
+    }
+}

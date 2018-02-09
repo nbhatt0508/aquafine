@@ -1,0 +1,61 @@
+.btn-slide {
+    display: none;
+    @include respond(phone){
+        text-align: center;
+        width: 24px;
+        height: 16px;
+        background-color: $red;
+        color: $white;
+        margin: 0 auto;
+        display: block;
+        @include border-radius(0px 0px 160px 160px);
+        &:hover,
+        &:focus {
+            color: $white;
+        }
+    }
+}
+
+.btn-one {
+    background-color: transparent;
+    border: 1px solid $white;
+    color: $white;
+    @include border-radius(0px);
+    font-size: 16px;
+    letter-spacing: 1px;
+    padding: .75rem 1.5rem;
+    cursor: pointer;
+    @include transition(all .3s ease-in-out);
+    &:hover {
+        background-color: $white;
+        color: $red;
+    }
+}
+
+.btn-intro {
+    cursor: pointer;
+    margin-top: 5rem;
+    font-size: 16px;
+    color: $white;
+    background-color: $grey;
+    padding: .85rem 2.5rem;
+    @include transition(all .3s ease-in-out);
+    &:hover {
+        background-color: $red;
+    }
+}
+
+.btn-red {
+    cursor: pointer;
+    font-size: 16px;
+    margin-top: 1rem;
+    color: $white;
+    letter-spacing: 0px;
+    background-color: $red;
+    padding: .85rem 1.5rem;
+    @include border-radius(0px);
+    @include transition(all .3s ease-in-out);
+    &:hover {
+        background-color: $grey;
+    }
+}

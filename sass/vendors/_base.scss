@@ -1,0 +1,54 @@
+*,
+*::after,
+*::before {
+    margin: 0;
+    padding: 0;
+    box-sizing: inherit;
+    list-style: none;
+    outline: none;
+}
+
+body {
+    box-sizing: border-box;
+    font-family: $font_family_1;
+    font-size: 15px;
+    line-height: 20px;
+    color: $color_foo;
+}
+
+::selection {
+    background-color: $red;
+    color: $white;
+}
+
+::-moz-selection {
+    background-color: $red;
+    color: $white;
+}
+
+ul {
+    margin-bottom: 0;
+}
+
+a {
+    @include transition (all 0.3s ease-in-out);
+    &:hover,
+    &:focus {
+        text-decoration: none;
+    }
+}
+
+a:focus,
+button:focus {
+    outline: none;
+}
+
+textarea {
+    resize: none;
+}
+
+header,
+section,
+.slider {
+    @include clearfix;
+}

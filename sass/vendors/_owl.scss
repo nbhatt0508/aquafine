@@ -1,0 +1,96 @@
+.owl-carousel{
+    position: relative;
+}
+.owl-carousel {
+    .item {
+        height: calc(100vh - 150px);
+    }
+}
+
+.owl-carousel {
+    .item {
+        background-position: top center;
+        background-size: cover;
+        background-repeat: no-repeat;
+    }
+}
+.owl-carousel {
+    .item {
+        .item-caption{
+            position: absolute;
+            text-align: center;
+            width: 600px;  
+            margin: 0 auto;
+            bottom: 0%;
+            left: 0;
+            right: 0;
+            color: $white;
+            background-color: $red;
+            opacity: .85;
+            font-size: 36px;
+            font-weight: bold;
+            padding: 3rem 2rem;  
+            @include respond(phone){
+                width: 80%;  
+                padding: 2rem 1rem; 
+            }
+        }
+    }
+}
+
+.owl-carousel {
+    .owl-nav {
+        .owl-prev {
+            position: absolute;
+            top: 45%;
+            background: $red;
+            border-radius: 0px;
+            margin: 0;
+            padding: .3rem .1rem;
+            @include transition(all .3s ease-in-out); 
+            &:hover { 
+                background-color: $grey;
+            }
+        }
+        .owl-next {
+            position: absolute;
+            top: 45%;
+            background: $red;
+            border-radius: 0px;
+            margin: 0;
+            padding: .3rem .1rem;
+            @include transition(all .3s ease-in-out); 
+            &:hover { 
+                background-color: $grey;
+            }
+        }
+    }
+}
+.owl-carousel {
+    .owl-nav {
+        .owl-prev {
+            left: 0px;
+        }
+        .owl-next {
+            right: 0px;
+        }
+    }
+}
+
+.caption-title {
+    font-size: 42px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+    display: block;
+    @include respond(phone){
+        font-size: 28px;
+    }
+    &-inner {
+        display: block;
+        font-size: 30px;
+        font-weight: 300;
+        @include respond(phone){
+            font-size: 18px;
+        }
+    }
+}

@@ -1,0 +1,46 @@
+.breadcrumb_parallax {
+    background-image: url(../../assets/img/breadcrumb_bg.jpg);
+    min-height: 220px;
+    background-attachment: fixed;
+    background-position: top center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.pgbr-color {
+    position: relative;
+    &:before {
+        position: absolute;
+        content: '';
+        width: 100%;
+        height: 100%;
+        background: $grey;
+        opacity: .8;
+        left: 0;
+        top: 0;
+    }
+}
+
+.breadcrumb-modify {
+    background-color: transparent;
+    text-align: center;
+    li {
+        display: inline-block;
+        font-size: 14px;
+        a {            
+            color: $color_1;
+            &:hover {
+                color: $white;
+            }
+        }
+    }
+    .breadcrumb-item {
+        float: none;
+        &:before {
+            color: $color_1;
+        }
+    }
+    .breadcrumb-item.active {
+        color: $red;
+    }
+}

@@ -1,0 +1,56 @@
+.pt-xl {
+    padding-top: 8rem;
+}
+
+.pt-md {
+    padding-top: 6rem;
+}
+
+.pb-xl {
+    padding-bottom: 8rem;
+}
+
+.pb-md {
+    padding-bottom: 6rem;
+}
+
+.ptb-xl {
+    padding: 8rem 0;
+}
+
+.ptb-md {
+    padding: 6rem 0;
+}
+
+.ptb-sm {
+    padding: 3rem 0;
+}
+
+//colors
+.darktext {
+    color: $grey;
+}
+
+.lighttext {
+    color: $lighttext;
+}
+
+.redtext {
+    color: $red;
+}
+
+.colorfoo {
+    color: $color_foo;
+}
+
+.fs-sm {
+    font-size: 14px;
+}
+
+.fs-xs {
+    font-size: 12px;
+}
+
+.fw-light {
+    font-weight: 300;
+}

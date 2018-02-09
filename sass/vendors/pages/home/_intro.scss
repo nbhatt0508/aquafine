@@ -1,0 +1,97 @@
+//intro
+.intro_box {
+    margin-top: 1rem;
+    border: 2px solid $lighttext;
+    @include border-radius(4px);
+    padding: 4rem 2rem 3rem;
+    @include transition(all .3s ease-in-out);
+    @include respond(tab-port){
+        padding: 4rem 0rem 3rem;
+    }
+    &-icon {
+        margin-bottom: 1.5rem;
+    }
+    &-title {
+        color: $red;
+        font-size: 26px;
+        font-weight: 700;
+        margin-bottom: 1rem;
+    }    
+    &:hover {
+        @include box-shadow(2px, 4px, 25px, rgba(0, 0, 0, 0.1));
+    }
+}
+.intro_top-corners {
+    position: relative;
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        top: 0;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $lighttext;
+        @include transition(all .3s ease-in-out);
+    }
+    &:before{
+        top: -2px;
+        left: -2px;    
+        border-width: 2px 0 0 2px;
+        border-radius: 5px 0 0 0;
+    }
+    &:after{
+        top: -2px;
+        right: -2px;
+        border-width: 2px 2px 0 0;
+        border-radius: 0 5px 0 0;
+    }
+}
+.intro_box {
+    &:hover {
+        &:before, &:after {
+            border-color: $red;
+        }
+    }
+}
+
+.intro_bottom-corners {
+    &:before, &:after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        width: 30px;
+        height: 30px;
+        border: 2px solid $lighttext;
+        @include transition(all .3s ease-in-out);
+    }
+    &:before{
+        bottom: -2px;
+        left: -2px;  
+        border-width: 0 0 2px 2px;
+        border-radius: 0 0 0 5px;
+    }
+    &:after{
+        bottom: -2px;
+        right: -2px;
+        border-width: 0 2px 2px 0;
+        border-radius: 0 0 5px 0;
+    }
+    &:hover {
+        &:before, &:after {
+            border-color: $red;
+        }
+    }
+}
+
+.intro_box {
+    &:hover .intro_bottom-corners{
+        &:before, &:after {
+            border-color: $red;
+        }
+    }
+}
+
+.intro_box {
+    &:hover .btn-intro {        
+        background-color: $red;
+    }
+}

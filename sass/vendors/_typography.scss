@@ -1,0 +1,35 @@
+.intro_title {
+    font-size: 36px;
+    font-weight: 400;
+    color: $grey;
+    &-text {
+        color: $red;
+        font-weight: 700;
+        text-transform: uppercase;
+    }
+    &-sub {
+        font-size: 13px;
+        display: block;
+    }
+    &-text-sub {
+        font-size: 20px;
+        display: block;
+        color: $color_foo;
+    }
+}
+
+.h4-title {
+    font-size: 16px;
+    font-weight: 500;
+    color: $white;
+    letter-spacing: 1px;
+    margin-bottom: 2rem;
+}
+
+.page_title {
+    color: $white;
+    font-size: 32px;
+    font-weight: 600;
+    margin-bottom: 0;
+    margin-top: 2rem;
+}

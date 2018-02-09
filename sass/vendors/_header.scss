@@ -1,0 +1,111 @@
+.header {
+    &_top {
+        background-color: $grey;
+    }
+    &_top-social {
+        @include respond(phone) {
+            text-align: center;
+        }
+        li {
+            display: inline-block;
+            a {
+                font-size: 16px;
+                color: $white;
+                font-weight: 400;
+                width: 30px;
+                height: 30px;
+                text-align: center;
+                display: block;
+                margin-right: -4px;
+                i {
+                    line-height: 32px;
+                }
+            }
+            .facebook {
+                background-color: #5b78bd;
+                &:hover {
+                    background-color: #4762a0;
+                }
+            }
+            .twitter {
+                background-color: #44a7ef;
+                &:hover {
+                    background-color: #3c96d8;
+                }
+            }
+            .googleplus {
+                background-color: #d32d27;
+                &:hover {
+                    background-color: #b7231d;
+                }
+            }
+        }
+    }
+    &_right-list {
+        padding: .2rem 0 0;
+        @include respond(phone) {
+            text-align: center;
+            margin: 5px 0;
+        }
+        li {
+            display: inline-block;
+            color: $lighttext;
+            font-size: 12px;
+            margin-right: 1rem;
+            @include respond(phone) {
+                margin-right: 12px;
+            }
+            position: relative;
+            &:not(:last-child) {
+                &:after {
+                    position: absolute;
+                    content: '';
+                    height: 50%;
+                    width: 1px;
+                    background-color: $lighttext;
+                    right: -12px;
+                    @include respond(phone) {
+                        right: -9px;
+                    }
+                    top: 5px;
+                }
+            }
+            &:nth-last-child(2) {
+                margin-left: 1rem;
+                @include respond(phone) {
+                    margin-left: 0rem;
+                }
+                &:after {
+                    position: absolute;
+                    content: '';
+                    height: 50%;
+                    width: 0px;
+                    background-color: $lighttext;
+                    right: -12px;
+                    top: 5px;
+                }
+            }
+            a {
+                font-size: 12px;
+                color: $lighttext;
+                font-weight: 300;
+                text-align: center;
+                display: block;
+                margin-right: -4px;
+                &:hover {
+                    color: $red;
+                    text-decoration: none;
+                }
+            }
+        }
+        i {
+            margin-right: .3rem;
+        }
+    }
+}
+
+#panel {
+    @include respond(phone) {
+        display: none;
+    }
+}
